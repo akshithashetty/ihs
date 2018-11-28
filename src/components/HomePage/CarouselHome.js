@@ -17,7 +17,7 @@ const items = [
 		text: 'it was a very good and helpful experience.'
 	},
 	{
-		src:'',
+		src:'/img/guitar.jpg',
 		altText: 'Slide 2',
 		caption: 'Slide 2',
 		text: 'it was a very good and helpful experience.'
@@ -33,7 +33,7 @@ const items = [
 class CarouselHome extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { activeIndex: 2 };
+		this.state = { activeIndex: 1 };
 		this.next = this.next.bind(this);
 		this.previous = this.previous.bind(this);
 		this.goToIndex = this.goToIndex.bind(this);
@@ -78,15 +78,15 @@ class CarouselHome extends Component {
 					style={{justifyContent:'center'}}
 				>
 				<Container fluid style={{backgroundColor:'black'}}>
-				<Row style={{justifyContent:'center',width:'100%'}}>
-				<Card color="primary" style={{width:'40%',height:'40%',padding:'10%',margin:'10%'}}>
-					<CardImg top width="50%" alt={item.altText} src={item.src} />
-					<CardBody >
-						<CardTitle>{item.caption}</CardTitle>
-						<CardText>{item.text}</CardText>
-						
-					</CardBody>
-				</Card>
+				<Row style={{justifyContent:'center',width:'100%',padding:0,margin:0}}>
+					<Card color="primary" style={{width:'40%',padding:'2vw',margin:'3vw',justifyContent:'center'}}>
+						<CardImg top alt={item.altText} src={item.src} style={{borderRadius:'50%',width:"15vw",height:'15vw',alignSelf:'center' }}/>
+						<CardBody style={{textAlign:'center',fontSize:'2vw'}}>
+							<CardTitle>{item.caption}</CardTitle>
+							<CardText>{item.text}</CardText>
+							
+						</CardBody>
+					</Card>
 				</Row>
 				</Container>
 				</CarouselItem>
@@ -100,7 +100,7 @@ class CarouselHome extends Component {
 				previous={this.previous}
 				style={{color:'black'}}
 			>
-				<CarouselIndicators style={{color:'black'}} items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+				<CarouselIndicators style={{color:'black',justifyContent:'center'}} items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
 				{slides}
 				<CarouselControl style={{color:'black'}} direction="prev" directionText="Previous" onClickHandler={this.previous} />
 				<CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />

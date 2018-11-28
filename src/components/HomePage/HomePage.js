@@ -8,8 +8,8 @@ class HomePage extends Component {
     return (
     	<Container fluid style={{padding:0}}>
     		<NavbarHeader />
-    		<Container fluid style={{backgroundImage:'url("/img/pink.png")',height:'60vw',paddingTop:'8%',paddingBottom:'8%',paddingLeft:'16%',paddingRight:'16%'}}>
-    			<Container style={{borderStyle:'solid',borderWidth:'3px',paddingBottom:'3%'}}>
+    		<Container fluid style={{backgroundImage:'url("/img/pink.png"),url("/img/tailor.jpg")',height:'60vw',paddingTop:'8%',paddingBottom:'8%',paddingLeft:'16%',paddingRight:'16%'}}>
+    			<Container style={{borderStyle:'solid',borderWidth:'7px',paddingBottom:'3%'}}>
     				<Row style={{paddingTop:'4%',paddingRight:'4%',paddingLeft:'4%',fontSize:'4vw',fontWeight:'600'}}>
     					<span>Something beyond just gifts, get the joy of giving back</span>
     				</Row>
@@ -17,7 +17,7 @@ class HomePage extends Component {
     					<span>We are a foundation that helps women become self sufficient by helping them tailor their ideas.</span>
     				</Row>
     				<Row style={{justifyContent:'space-evenly',paddingTop:'6%',paddingLeft:'4%',paddingRight:'4%',fontStyle:'italic'}}>
-    					<img alt="thread" src="/img/thread.jpeg" style={{width:'12%',height:'12%'}}/>
+    					<img alt="thread" src="/img/thread1.png" style={{width:'12%',height:'12%'}}/>
     					<Button color="warning" style={{height:'5%',fontSize:'2vw',fontWeight:'600'}}>Know More</Button>
     					<Button color="warning" style={{height:'5%',fontSize:'2vw',fontWeight:'600'}}>View Products</Button>
     				</Row>
@@ -31,11 +31,16 @@ class HomePage extends Component {
 			</Container>
 			<Container style={{padding:'2%'}}>
 				<Row style={{justifyContent:'center',fontWeight:'600',fontSize:'3vw'}}>
-					<span>What The Members of IHS Have To Say</span>
+					<span>What We Do</span>
 				</Row>
-				<Row style={{justifyContent:'center'}}>
-					<p>
-						content
+				<Row style={{justifyContent:'center',paddingTop:'2%',fontSize:'1.5vw'}}>
+					<p style={{fontWeight:600}}>
+						The Ismailia Helping Society was established in 1936, by a group of visionaries and social thinkers of our community. IHS was  registered as an NGO in 1952. 
+						The mission of  IHS- mentoring women by enhancing their economic status through improved occupational skills and business acumen. 
+						The Society had two major programmes:<br/>
+						1) Project Tara: the project was launched in 1995.  TARA - A Star, symbolised Hope. A Hope to achieve the heights of success. This is a beadcraft project nurtured by IHS to promote the economic empowerment of rural women of Saurashtra. The traditional skill and art of rural women is blended harmoniously with contemporary colour and design to provide handcrafted masterpieces. 
+						<br/>2)Flavours: The Catering Programme was launched in 2009. It was started to promote enterprnership of women in the field of catering. Women with culinary skills are upgraded under this programme. 
+
 					</p>
 				</Row>
 			</Container>
