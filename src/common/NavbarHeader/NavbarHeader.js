@@ -34,25 +34,25 @@ class NavbarHeader extends Component {
 	  <Container fluid style={{padding:0}}>
 		<Navbar color="light" light expand="md" style={{justifyContent:'center'}}>
 			<NavbarBrand href="/" className="mr-auto" style={{paddingLeft:'8%'}}>
-			  	<img alt="logo"></img>
+			  	<img alt="logo" src="/img/nasa.png" height="45px"></img>
 			</NavbarBrand>
-		  	<NavbarToggler onClick={this.toggle} style={{marginRight:'20%',marginBottom:'3%'}}/>
+		  	<NavbarToggler onClick={this.toggle} style={{marginRight:'10%',marginBottom:'3%'}}/>
 		 	<Collapse isOpen={this.state.isOpen} navbar style={{paddingLeft:'12%',justifyContent:'center'}}>
-				<Nav style={{width:'100%'}} navbar>
-					<NavItem style={{marginRight:'2%'}}>
+				<Nav style={{width:'100%',fontWeight:600,color:'black'}} navbar>
+					<NavItem style={{marginRight:'6%'}}>
 						<NavLink href="/components/">HOME</NavLink>
 					</NavItem>
-					<NavItem style={{marginRight:'2%'}}>
+					<NavItem style={{marginRight:'6%'}}>
 						<NavLink href="">ABOUT US</NavLink>
 					</NavItem>
-					<NavItem style={{marginRight:'2%'}}>
+					<NavItem style={{}}>
 						<NavLink href="">PRODUCTS</NavLink>
 					</NavItem>
 				</Nav>
 			</Collapse>
 	  		<Nav style={{paddingRight:'16%'}} navbar>
 		  		<NavItem>
-					<FontAwesomeIcon icon={faCartPlus} size={'2x'} style={{color:'ffdb58'}} />
+					<FontAwesomeIcon icon={faCartPlus} size={'2x'} style={{color:'BDB76B'}} />
 		  		</NavItem>
 	  		</Nav>
 		</Navbar>
