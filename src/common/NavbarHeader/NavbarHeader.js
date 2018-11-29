@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import {
 	Container,
 	Collapse,
@@ -9,7 +10,6 @@ import {
 	NavbarBrand,
 	Nav,
 	NavItem,
-	NavLink,
 	UncontrolledDropdown,
 	DropdownToggle,
 	DropdownMenu,
@@ -39,14 +39,14 @@ class NavbarHeader extends Component {
 		  	<NavbarToggler onClick={this.toggle} style={{marginRight:'10%',marginBottom:'3%'}}/>
 		 	<Collapse isOpen={this.state.isOpen} navbar style={{paddingLeft:'12%',justifyContent:'center'}}>
 				<Nav style={{width:'100%',fontWeight:600,color:'black',fontSize:'1.7vw'}} navbar>
-					<NavItem style={{marginRight:'6%'}}>
-						<NavLink href="/components/">HOME</NavLink>
+					<NavItem style={{marginRight:'6%',color:'black'}}>
+						<Link to='/' style={{color:'black',textDecoration:'none'}}>HOME</Link>
 					</NavItem>
 					<NavItem style={{marginRight:'6%'}}>
-						<NavLink href="">ABOUT US</NavLink>
+						<Link to='/about' style={{color:'black',textDecoration:'none'}}>ABOUT US</Link>
 					</NavItem>
 					<NavItem style={{}}>
-						<NavLink href="">PRODUCTS</NavLink>
+						<Link to='/products' style={{color:'black',textDecoration:'none'}}>PRODUCTS</Link>
 					</NavItem>
 				</Nav>
 			</Collapse>
