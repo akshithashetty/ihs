@@ -13,7 +13,10 @@ import {
 	UncontrolledDropdown,
 	DropdownToggle,
 	DropdownMenu,
-	DropdownItem } from 'reactstrap';
+	DropdownItem,
+	Row } from 'reactstrap';
+
+
 
 class NavbarHeader extends Component {
   constructor(props) {
@@ -53,6 +56,26 @@ class NavbarHeader extends Component {
 	  		<Nav style={{paddingRight:'16%'}} navbar>
 		  		<NavItem>
 					<FontAwesomeIcon icon={faCartPlus} size={'2x'} style={{color:'F5D04C'}} />
+
+		  		</NavItem>
+		  		<NavItem style={{
+	  				padding:0,
+					top:'9%',
+					right:'15.5%',
+					position:'absolute',
+					background: '#ff6600',
+					height: '20px',
+					width: '18px',
+					textAlign: 'center',
+					fontSize: '13px',
+					borderRadius: '50%',
+					color: 'white',
+					border: '1px solid #ff6600',
+					fontFamily: 'sans-serif',
+					fontWeight: 'bold'}}>
+					<span>3</span>
+
+
 		  		</NavItem>
 	  		</Nav>
 		</Navbar>
