@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Button} from 'reactstrap';
-import NavbarHeader from '../../common/NavbarHeader/NavbarHeader';
+import { NavbarHeader } from '../../common/NavbarHeader/NavbarHeader';
 import CarouselHome from './CarouselHome'
 
 class HomePage extends Component {

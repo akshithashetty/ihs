@@ -4,8 +4,8 @@ import { Container, Row, Button} from 'reactstrap';
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-import updateCart from '../../_Redux/ActionCreators/CartActionCreator';
-import NavbarHeader from '../../common/NavbarHeader/NavbarHeader';
+import { addToCart, removeFromCart } from '../../_Redux/ActionCreators/CartActionCreator';
+import { NavbarHeader } from '../../common/NavbarHeader/NavbarHeader';
 import FeatureCard from "../../common/FeatureCard/FeatureCard";
 import { FEATURE_CARD_ELEMENTS } from './data';
 
@@ -15,26 +15,28 @@ class ProductsPage extends Component {
 	state={
 
 		selected: 'all',
-		expnd:false
+		expand:false
 	}
 
 	test = () => {
 		console.log(this.props.products)
 	}
 
-	addToCart = () => {
 
-		this.props.addItem('necklace')
+	onClick = ( action, name ) => {
+
+		if(action === 'add'){
+			this.props.addItem(name);
+		}
+		else{
+			this.props.removeItem(name);
+		}
 	}
 
 	render() {
 		return (
-			{/*<div>
-				Products page
-				<button onClick={this.addToCart}>testfirst</button>
-				<button onClick={this.test}>testfinal</button>
-			</div>
-			*/},
+
+			
 			<Container fluid style={{padding:0}}>
 				<NavbarHeader />
 				<SideNav onSelect={(selected) => {
@@ -88,12 +90,19 @@ class ProductsPage extends Component {
 	                                <FeatureCard
 	                                    img={feature_card.img}
 	                                    text={feature_card.text}
+	                                    onClick={this.onClick}
+	                                    name={feature_card.name}
 	                                />
 
 	                            ):"";
 	                        })
 	                    }
                     </Row>
+
+                    			<div>
+				Products page
+				<button onClick={this.test}>testfinal</button>
+			</div>
 				</Container>
 			</Container>
 		);
@@ -108,8 +117,11 @@ function mapDispatchToProps(dispatch) {
 
 	return {
 		addItem: (item) => {
-			dispatch(updateCart(item))
-	}
+			dispatch(addToCart(item))
+		},
+		removeItem: (item) => {
+			dispatch(removeFromCart(item))
+		}
 
 	}
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import {
 	Container,
 	Collapse,
@@ -83,9 +84,7 @@ class NavbarHeader extends Component {
 					border: '1px solid #ff6600',
 					fontFamily: 'sans-serif',
 					fontWeight: 'bold'}}>
-					<span>3</span>
-
-
+					<span>{ this.props.count }</span>
 		  		</NavItem>
 	  		</Nav>
 
@@ -95,4 +94,9 @@ class NavbarHeader extends Component {
   }
 }
 
-export default NavbarHeader;
+function mapStateToProps({ count }) {
+	return { count };
+}
+
+NavbarHeader = connect(mapStateToProps, {})(NavbarHeader);
+export { NavbarHeader };

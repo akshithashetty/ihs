@@ -1,3 +1,4 @@
-const CART = 'CART';
+const ADD = 'ADD';
+const REMOVE = 'REMOVE';
 
-export { CART };
+export { ADD, REMOVE };

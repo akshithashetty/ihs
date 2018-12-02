@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Card, Container} from 'reactstrap';
+import { Card, Container, Button, Row } from 'reactstrap';
 
 
 /**
@@ -28,6 +28,18 @@ function FeatureCard(props) {
                 <div className="text-center" style={{marginTop: "5%"}}>
                     <Container>
                         {props.text}
+                    </Container>
+
+                </div>
+
+                <hr/>
+
+                <div className="text-center" style={{marginTop: "5%"}}>
+                    <Container>
+                        <Row style={{justifyContent:'center', flexWrap:'wrap'}}>
+                            <Button onClick={()=>props.onClick("add",props.name)} style={{marginTop: "5%", marginLeft:'5%'}} color="primary">Add to Cart</Button>
+                            <Button onClick={()=>props.onClick("remove",props.name)} style={{marginTop: "5%",marginLeft:'5%'}} color="danger">Remove</Button>
+                        </Row>
                     </Container>
 
                 </div>

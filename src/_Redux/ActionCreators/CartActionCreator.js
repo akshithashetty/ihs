@@ -1,4 +1,4 @@
-import { CART } from "../actions/cart"
+import { ADD, REMOVE } from "../actions/cart"
 
 /**
  *
@@ -7,15 +7,26 @@ import { CART } from "../actions/cart"
  *
  * @returns {{type: string, user: *}}
  */
-function updateCart(newItem) {
+function addToCart(newItem) {
 	console.log(newItem)
     return {
-    	type: CART,
+    	type: ADD,
     	newItem: newItem
     };
 
 
 }
 
+function removeFromCart(item) {
+	console.log(item)
+    return {
+    	type: REMOVE,
+    	item: item
+    };
 
-export default updateCart;
+
+}
+
+
+
+export { addToCart, removeFromCart };
