@@ -28,20 +28,29 @@ class NavbarHeader extends Component {
 	};
   }
   toggle() {
+  	console.log(this.state.isOpen)
+  	if(this.state.isOpen==false){
+  		document.getElementById("notification").style.visibility = "hidden";
+  	}
+  	else{
+  		document.getElementById("notification").style.visibility = "visible";
+  	}
 	this.setState({
-	  isOpen: !this.state.isOpen
+
+		isOpen: !this.state.isOpen
+
 	});
   }
   render() {
 	return (
 	  <Container fluid style={{padding:0}}>
-		<Navbar color="light" light expand="md" style={{justifyContent:'center',height:'70px'}}>
-			<NavbarBrand href="/" className="mr-auto" style={{paddingLeft:'8%'}}>
+		<Navbar color="light" light expand="md" style={{justifyContent:'center'}}>
+			<NavbarBrand className="mr-auto" style={{paddingLeft:'8%'}}>
 			  	<img alt="logo" src="/img/nasa.png" height="45px"></img>
 			</NavbarBrand>
 		  	<NavbarToggler onClick={this.toggle} style={{marginRight:'10%',marginBottom:'3%'}}/>
 		 	<Collapse isOpen={this.state.isOpen} navbar style={{paddingLeft:'12%',justifyContent:'center'}}>
-				<Nav style={{width:'100%',fontWeight:600,color:'black',fontSize:'1.7vw'}} navbar>
+				<Nav style={{width:'100%',fontWeight:600,color:'black',fontSize:'20px',zIndex:99}} navbar>
 					<NavItem style={{marginRight:'6%',color:'black'}}>
 						<Link to='/' style={{color:'black',textDecoration:'none'}}>HOME</Link>
 					</NavItem>
@@ -53,12 +62,13 @@ class NavbarHeader extends Component {
 					</NavItem>
 				</Nav>
 			</Collapse>
+
 	  		<Nav style={{paddingRight:'16%'}} navbar>
 		  		<NavItem>
 					<FontAwesomeIcon icon={faCartPlus} size={'2x'} style={{color:'F5D04C'}} />
 
 		  		</NavItem>
-		  		<NavItem style={{
+		  		<NavItem id="notification" style={{
 	  				padding:0,
 					top:'9%',
 					right:'15.5%',
@@ -78,6 +88,7 @@ class NavbarHeader extends Component {
 
 		  		</NavItem>
 	  		</Nav>
+
 		</Navbar>
 	  </Container>
 	);
