@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import updateCart from '../../_Redux/ActionCreators/CartActionCreator';
 import NavbarHeader from '../../common/NavbarHeader/NavbarHeader';
-
+import FeatureCard from "../../common/FeatureCard/FeatureCard";
+import { FEATURE_CARD_ELEMENTS } from './data';
 
 
 class ProductsPage extends Component {
@@ -54,7 +55,7 @@ class ProductsPage extends Component {
 
 	    		}}
 	    		expanded={this.state.expand}
-	    		style={{top:'70px',zIndex:0}}
+	    		style={{top:'70px',zIndex:97,position:'fixed'}}
 				>
 				    <SideNav.Toggle expanded={true}/>
 				    <SideNav.Nav defaultSelected="all">
@@ -76,8 +77,23 @@ class ProductsPage extends Component {
 				        </NavItem>
 				    </SideNav.Nav>
 				</SideNav>
-				<Container fluid style={{paddingLeft:100}}>
-					hello
+				<Container fluid style={{paddingLeft:100,paddingRight:36,paddingTop:100,paddingBottom:36}}>
+
+					<Row style={{justifyContent:'center'}}>
+						{
+	                        FEATURE_CARD_ELEMENTS.map((feature_card) => {
+
+	                            return (feature_card.category === this.state.selected || this.state.selected === "all") ? 
+	                            (
+	                                <FeatureCard
+	                                    img={feature_card.img}
+	                                    text={feature_card.text}
+	                                />
+
+	                            ):"";
+	                        })
+	                    }
+                    </Row>
 				</Container>
 			</Container>
 		);
