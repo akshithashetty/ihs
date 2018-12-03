@@ -66,8 +66,9 @@ class NavbarHeader extends Component {
 
 	  		<Nav style={{paddingRight:'16%'}} navbar>
 		  		<NavItem>
-					<FontAwesomeIcon icon={faCartPlus} size={'2x'} style={{color:'F5D04C'}} />
-
+		  			<Link to="/cart">
+						<FontAwesomeIcon icon={faCartPlus} size={'2x'} style={{color:'F5D04C'}} />
+					</Link>
 		  		</NavItem>
 		  		<NavItem id="notification" style={{
 	  				padding:0,

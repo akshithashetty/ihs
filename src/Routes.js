@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router-dom'
 import HomePage from './components/HomePage/HomePage';
 import AboutUs from './components/AboutUs/AboutUs';
 import { ProductsPage } from './components/ProductsPage/ProductsPage';
+import { MyCart } from './components/MyCart/MyCart';
+
 
 
 class Routes extends Component {
@@ -12,6 +14,7 @@ class Routes extends Component {
 		<Route exact path='/' component={HomePage}/>
 		<Route path='/about' component={AboutUs}/>
 		<Route path='/products' component={ProductsPage}/>
+		<Route path='/cart' component={MyCart}/>
 	</Switch>
 	);
   }
