@@ -38,7 +38,7 @@ class ProductsPage extends Component {
 
 			
 			<Container fluid style={{padding:0}}>
-				<NavbarHeader />
+				<NavbarHeader position="fixed"/>
 				<SideNav onSelect={(selected) => {
 					
 					this.setState({

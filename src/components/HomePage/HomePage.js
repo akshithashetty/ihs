@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import { Container, Row, Button} from 'reactstrap';
+import { Container, Row, Button } from 'reactstrap';
 import { NavbarHeader } from '../../common/NavbarHeader/NavbarHeader';
+import { Link } from 'react-router-dom';
+
 import CarouselHome from './CarouselHome'
 
 class HomePage extends Component {
   render() {
     return (
     	<Container fluid style={{padding:0}}>
-    		<NavbarHeader />
-    		<Container fluid style={{backgroundImage:'url("/img/pink.png"),url("/img/tailor.jpg")',height:'60vw',paddingTop:'8%',paddingBottom:'8%',paddingLeft:'16%',paddingRight:'16%'}}>
-    			<Container style={{borderStyle:'solid',borderWidth:'7px',paddingBottom:'3%'}}>
+    		<NavbarHeader position=""/>
+    		<Container fluid style={{backgroundImage:'url("/img/pink.png")',height:'60vw',paddingTop:'8%',paddingBottom:'8%',paddingLeft:'16%',paddingRight:'16%'}}>
+    			<Container style={{borderStyle:'solid',borderWidth:'1vw',paddingBottom:'3%'}}>
     				<Row style={{paddingTop:'4%',paddingRight:'4%',paddingLeft:'4%',fontSize:'4vw',fontWeight:'600'}}>
     					<span>Something beyond just gifts, get the joy of giving back</span>
     				</Row>
@@ -18,8 +20,8 @@ class HomePage extends Component {
     				</Row>
     				<Row style={{justifyContent:'space-evenly',paddingTop:'6%',paddingLeft:'4%',paddingRight:'4%',fontStyle:'italic'}}>
     					<img alt="thread" src="/img/thread1.png" style={{width:'12%',height:'12%'}}/>
-    					<Button color="warning" style={{height:'5%',fontSize:'2vw',fontWeight:'600'}}>Know More</Button>
-    					<Button color="warning" style={{height:'5%',fontSize:'2vw',fontWeight:'600'}}>View Products</Button>
+    					<Link to="/about"><Button color="warning" style={{height:'5vw',fontSize:'2vw',fontWeight:'600'}}>Know More</Button></Link>
+    					<Link to="/products"><Button color="warning" style={{height:'5vw',fontSize:'2vw',fontWeight:'600'}}>View Products</Button></Link>
     				</Row>
 
     			</Container>

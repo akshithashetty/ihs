@@ -44,7 +44,7 @@ class NavbarHeader extends Component {
   }
   render() {
 	return (
-	  <Container fluid style={{padding:0,position:'fixed',zIndex:98}}>
+	  <Container fluid style={{padding:0,position: this.props.position ,zIndex:98}}>
 		<Navbar color="light" light expand="md" style={{justifyContent:'center'}}>
 			<NavbarBrand className="mr-auto" style={{paddingLeft:'8%'}}>
 			  	<img alt="logo" src="/img/nasa.png" height="45px"></img>
