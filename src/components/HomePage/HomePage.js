@@ -10,7 +10,7 @@ class HomePage extends Component {
     return (
     	<Container fluid style={{padding:0}}>
     		<NavbarHeader position=""/>
-    		<Container fluid style={{backgroundImage:'url("/img/pink.png")',height:'60vw',paddingTop:'8%',paddingBottom:'8%',paddingLeft:'16%',paddingRight:'16%'}}>
+    		<Container fluid style={{backgroundImage:'url("/img/background_home.png")',height:'60vw',backgroundSize:'cover',paddingTop:'8%',paddingBottom:'8%',paddingLeft:'16%',paddingRight:'16%'}}>
     			<Container style={{borderStyle:'solid',borderWidth:'1vw',paddingBottom:'3%'}}>
     				<Row style={{paddingTop:'4%',paddingRight:'4%',paddingLeft:'4%',fontSize:'4vw',fontWeight:'600'}}>
     					<span>Something beyond just gifts, get the joy of giving back</span>
@@ -20,8 +20,8 @@ class HomePage extends Component {
     				</Row>
     				<Row style={{justifyContent:'space-evenly',paddingTop:'6%',paddingLeft:'4%',paddingRight:'4%',fontStyle:'italic'}}>
     					<img alt="thread" src="/img/thread1.png" style={{width:'12%',height:'12%'}}/>
-    					<Link to="/about"><Button color="warning" style={{height:'5vw',fontSize:'2vw',fontWeight:'600'}}>Know More</Button></Link>
-    					<Link to="/products"><Button color="warning" style={{height:'5vw',fontSize:'2vw',fontWeight:'600'}}>View Products</Button></Link>
+    					<Link to="/about"><Button color="warning" style={{fontSize:'2vw',fontWeight:'600',verticalAlign:'center'}}>Know More</Button></Link>
+    					<Link to="/products"><Button color="warning" style={{fontSize:'2vw',fontWeight:'600'}}>View Products</Button></Link>
     				</Row>
 
     			</Container>
@@ -31,12 +31,12 @@ class HomePage extends Component {
 					<hr style={{border:'1px solid black',width:'30%'}} />
 				</Row>
 			</Container>
-			<Container style={{padding:'2%'}}>
-				<Row style={{justifyContent:'center',fontWeight:'600',fontSize:'3vw'}}>
+			<Container fluid style={{padding:0}}>
+				<Row style={{justifyContent:'center',fontWeight:'600',fontSize:'3vw',margin:0}}>
 					<span>What We Do</span>
 				</Row>
-				<Row style={{justifyContent:'center',paddingTop:'2%',fontSize:'1.5vw'}}>
-					<p style={{fontWeight:600}}>
+				<Row style={{justifyContent:'center',paddingTop:'2%',fontSize:'1.5vw',margin:0}}>
+					<p style={{fontWeight:600,paddingRight:'6%',paddingLeft:'6%',fontSize:'2vw'}}>
 						The Ismailia Helping Society was established in 1936, by a group of visionaries and social thinkers of our community. IHS was  registered as an NGO in 1952. 
 						The mission of  IHS- mentoring women by enhancing their economic status through improved occupational skills and business acumen. 
 						The Society had two major programmes:<br/>

@@ -11,10 +11,10 @@ class Routes extends Component {
   render() {
 	return (
 	<Switch>
-		<Route exact path='/' component={HomePage}/>
-		<Route path='/about' component={AboutUs}/>
-		<Route path='/products' component={ProductsPage}/>
-		<Route path='/cart' component={MyCart}/>
+		<Route exact path='/' component={ HomePage }/>
+		<Route path='/about' component={ AboutUs }/>
+		<Route path='/products' component={ ProductsPage }/>
+		<Route path='/cart' component={ MyCart }/>
 	</Switch>
 	);
   }
