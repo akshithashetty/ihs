@@ -47,7 +47,7 @@ class NavbarHeader extends Component {
 	  <Container fluid style={{padding:0,position: this.props.position ,zIndex:98}}>
 		<Navbar color="light" light expand="md" style={{justifyContent:'center'}}>
 			<NavbarBrand className="mr-auto" style={{paddingLeft:'8%'}}>
-			  	<img alt="logo" src="/img/nasa.png" height="45px"></img>
+			  	<img style={{backgroundSize:'cover',height:'45px'}}alt="logo" src="/img/logo.jpg"></img>
 			</NavbarBrand>
 		  	<NavbarToggler onClick={this.toggle} style={{marginRight:'10%',marginBottom:'3%'}}/>
 		 	<Collapse isOpen={this.state.isOpen} navbar style={{paddingLeft:'12%',justifyContent:'center'}}>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Button } from 'reactstrap';
 import { NavbarHeader } from '../../common/NavbarHeader/NavbarHeader';
 import { Link } from 'react-router-dom';
-
+import { Footer } from '../../common/Footer/Footer';
 import CarouselHome from './CarouselHome'
 
 class HomePage extends Component {
@@ -54,6 +54,7 @@ class HomePage extends Component {
 			<Container fluid style={{padding:'0%'}}>
 				<CarouselHome />
 			</Container>
+			<Footer />
     	</Container>
     );
   }

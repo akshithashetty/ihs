@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import { addToCart, removeFromCart } from '../../_Redux/ActionCreators/CartActionCreator';
 import { NavbarHeader } from '../../common/NavbarHeader/NavbarHeader';
+import { Footer } from '../../common/Footer/Footer';
 import FeatureCard from "../../common/FeatureCard/FeatureCard";
 import { FEATURE_CARD_ELEMENTS } from './data';
 
@@ -104,7 +105,9 @@ class ProductsPage extends Component {
 				<button onClick={this.test}>testfinal</button>
 			</div>
 				</Container>
+				<Footer />
 			</Container>
+
 		);
 	}
 }
