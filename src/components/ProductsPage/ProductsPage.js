@@ -70,12 +70,52 @@ class ProductsPage extends Component {
 				                All Products
 				            </NavText>
 				        </NavItem>
-				        <NavItem eventKey="necklaces">
+				        <NavItem eventKey="Necklaces">
 				            <NavIcon>
 				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
 				            </NavIcon>
 				            <NavText>
 				                Necklaces
+				            </NavText>
+				        </NavItem>
+				        <NavItem eventKey="Batwas">
+				            <NavIcon>
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            </NavIcon>
+				            <NavText>
+				                Batwas
+				            </NavText>
+				        </NavItem>
+				        <NavItem eventKey="Clutch">
+				            <NavIcon>
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            </NavIcon>
+				            <NavText>
+				                Clutch
+				            </NavText>
+				        </NavItem>
+				        <NavItem eventKey="Tablewear">
+				            <NavIcon>
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            </NavIcon>
+				            <NavText>
+				                Tablewear
+				            </NavText>
+				        </NavItem>
+				        <NavItem eventKey="Shawls">
+				            <NavIcon>
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            </NavIcon>
+				            <NavText>
+				                Shawls
+				            </NavText>
+				        </NavItem>
+				        <NavItem eventKey="Other">
+				            <NavIcon>
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            </NavIcon>
+				            <NavText>
+				                Other
 				            </NavText>
 				        </NavItem>
 				    </SideNav.Nav>
@@ -90,7 +130,6 @@ class ProductsPage extends Component {
 	                            (
 	                                <FeatureCard
 	                                    img={feature_card.img}
-	                                    text={feature_card.text}
 	                                    onClick={this.onClick}
 	                                    name={feature_card.name}
 	                                />
@@ -99,13 +138,7 @@ class ProductsPage extends Component {
 	                        })
 	                    }
                     </Row>
-
-                    			<div>
-				Products page
-				<button onClick={this.test}>testfinal</button>
-			</div>
 				</Container>
-				<Footer />
 			</Container>
 
 		);

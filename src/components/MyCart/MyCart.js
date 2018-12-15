@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Container, Row, Button,Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { NavbarHeader } from '../../common/NavbarHeader/NavbarHeader';
+import { Footer } from '../../common/Footer/Footer';
+
 
 
 class MyCart extends Component {
@@ -61,12 +63,12 @@ class MyCart extends Component {
 			return(
 				<Container>
 					<Row>
-						<span style={{fontWeight:500, fontSize:'2vw',paddingRight:'8vw',paddingLeft:'10vw'}}>Product</span>
+						<span style={{fontWeight:500, fontSize:'2vw',width:'50vw',paddingLeft:'10vw'}}>Product</span>
 						<span style={{fontWeight:500, fontSize:'2vw'}}>Quantity</span>
 					</Row>
 					<Row>
-						<span style={{fontWeight:600, fontSize:'3vw',paddingRight:'12vw',paddingLeft:'10vw'}}>{product}</span>
-						<span style={{fontWeight:600, fontSize:'3vw'}}>{this.state.quantity[counter]}</span>
+						<span style={{fontWeight:600, fontSize:'3vw',width:'50vw',paddingLeft:'10vw'}}>{product}</span>
+						<span style={{fontWeight:600, fontSize:'3vw',paddingLeft:'3vw'}}>{this.state.quantity[counter]}</span>
 					</Row>
 				</Container>
 
@@ -117,6 +119,7 @@ class MyCart extends Component {
 						<Button color="warning" style={{height:'10%',fontSize:'1.6vw',color:'white'}} disabled={!this.state.name || !this.state.phone || !this.state.email || !this.state.pincode}>Request Order</Button>
 					</Form>
 				</Container>
+				<Footer />
 			</Container>
 			
 		);

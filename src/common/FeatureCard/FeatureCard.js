@@ -38,7 +38,7 @@ class FeatureCard extends React.Component {
         return (
             <Card className="col-md-4 col-lg-3 shadow-sm" style={{margin: "2%"}}>
 
-                <div className="container" style={{paddingTop: "10%",paddingLeft: "5%",paddingRight: "5%",paddingBottom: "7%"}}>
+                <div className="container" style={{paddingTop: "10%",paddingLeft: "5%",paddingRight: "5%",paddingBottom: "5%"}}>
 
                     <div className="text-center ">
 
@@ -58,11 +58,9 @@ class FeatureCard extends React.Component {
 
                     </div>
 
-                    <hr/>
-
-                    <div className="text-center" style={{marginTop: "5%"}}>
-                        <Container>
-                            {this.props.text}
+                    <div className="text-center" style={{marginTop: "2%"}}>
+                        <Container style={{fontWeight:600,fontSize:'1.6vw'}}>
+                            {this.props.name}
                         </Container>
 
                     </div>
@@ -73,7 +71,7 @@ class FeatureCard extends React.Component {
                         <Container>
                             <Row style={{justifyContent:'center', flexWrap:'wrap'}}>
                                 <Button onClick={()=>this.props.onClick("add",this.props.name)} style={{marginTop: "5%", marginLeft:'5%'}} color="primary">Add to Cart</Button>
-                                <Button onClick={()=>this.props.onClick("remove",this.props.className)} style={{marginTop: "5%",marginLeft:'5%'}} color="danger">Remove</Button>
+                                <Button onClick={()=>this.props.onClick("remove",this.props.name)} style={{marginTop: "5%",marginLeft:'5%'}} color="danger">Remove</Button>
                             </Row>
                         </Container>
 
