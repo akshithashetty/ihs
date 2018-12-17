@@ -79,7 +79,7 @@ class MyCart extends Component {
 	render() {
 
 		return (
-			<Container fluid style={{padding:0}}>
+			<Container fluid style={{padding:0,minHeight:'100vh'}}>
 				<NavbarHeader position=""/>
 				<Container fluid >
 					<Row style={{padding:'3%'}}>
@@ -91,7 +91,7 @@ class MyCart extends Component {
 
 						}
 					</Row>
-					<Link to="/products"><Button color="primary" style={{fontSize:'2vw',fontWeight:'600',verticalAlign:'center',marginLeft:'18vw',marginTop:'3vw'}}>Modify Cart</Button></Link>
+					<Link to="/products"><Button color="primary" style={{fontSize:'2vw',fontWeight:'600',verticalAlign:'center',marginLeft:'35vw',marginTop:'3vw'}}>Modify Cart</Button></Link>
 				</Container>
 					<Row style={{margin:0,padding:'3%'}}>
 						<span style={{fontWeight:600,fontSize:'3vw'}}>Step 2- Fill Confirmation Form</span>
@@ -118,6 +118,12 @@ class MyCart extends Component {
 							</FormGroup>
 						<Button color="warning" style={{height:'10%',fontSize:'1.6vw',color:'white'}} disabled={!this.state.name || !this.state.phone || !this.state.email || !this.state.pincode}>Request Order</Button>
 					</Form>
+				</Container>
+				<Container>
+					<MediaQuery query="(max-device-width: 1224px)">
+						<Container fluid style={{backgroundImage:'url("/img/logo2.jpg")',backgroundSize:'cover',height:'60vw',paddingTop:'3%',paddingBottom:'8%',paddingLeft:'45%',paddingRight:'0%'}}>
+						</Container>
+					</MediaQuery>
 				</Container>
 				<Footer />
 			</Container>

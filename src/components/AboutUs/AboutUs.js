@@ -7,9 +7,9 @@ import { Footer } from '../../common/Footer/Footer';
 class App extends Component {
   render() {
     return (
-		<Container fluid style={{padding:0}}>
+		<Container fluid style={{padding:0,minHeight:'100vh'}}>
 			<NavbarHeader position="fixed"/>
-			<Container fluid style={{backgroundImage:'url("/img/logo2.jpg")', backgroundSize:'cover',height:'50vw'}}>
+			<Container fluid style={{backgroundImage:'url("/img/about.jpg")', backgroundSize:'cover',height:'60vw',paddingTop:'70px'}}>
 			</Container>
 			<Container fluid>
 				<Row style={{fontSize:'3vw',fontWeight:600,justifyContent:'center',paddingTop:'8%'}}>

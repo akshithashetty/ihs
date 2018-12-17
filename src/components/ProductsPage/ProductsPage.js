@@ -80,7 +80,7 @@ class ProductsPage extends Component {
 				        </NavItem>
 				        <NavItem eventKey="Batwas">
 				            <NavIcon>
-				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            	<span style={{}}>Batwas</span>
 				            </NavIcon>
 				            <NavText>
 				                Batwas

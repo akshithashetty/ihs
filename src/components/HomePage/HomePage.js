@@ -8,7 +8,7 @@ import CarouselHome from './CarouselHome'
 class HomePage extends Component {
   render() {
     return (
-    	<Container fluid style={{padding:0}}>
+    	<Container fluid style={{padding:0, minHeight:'100vh'}}>
     		<NavbarHeader position=""/>
     		<Container fluid style={{backgroundImage:'url("/img/background_home.png")',height:'60vw',backgroundSize:'cover',paddingTop:'8%',paddingBottom:'8%',paddingLeft:'16%',paddingRight:'16%'}}>
     			<Container style={{borderStyle:'solid',borderWidth:'1vw',paddingBottom:'3%'}}>

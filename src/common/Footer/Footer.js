@@ -13,16 +13,33 @@ import MediaQuery from 'react-responsive';
 function Footer() {
 
     return (
-        <Container fluid={true} style={{padding: 0}}>
-            <Container fluid={true} style={{filter: 'brightness(80%)',backgroundColor: '#404040',backgroundSize: 'cover',backgroundPosition: 'center'}}>
-                <Row style={{paddingTop:'3%',paddingBottom:'3%', paddingLeft  :'4%',color:'#fff',justifyContent:'sapce-between'}}>
-                    <span style={{fontSize:'1.6vw',marginRight:'10%'}}>Phone: +91 22-23476453</span>
-                    <span style={{fontSize:'1.6vw'}}>Email: tara.society1@gmail.com</span> 
-                    <MediaQuery query="(min-device-width: 1224px)">
-                    <Link  style={{marginLeft:'20%',color: 'inherit',opacity:1}} to="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon size={"2x"} icon={faInstagram} style={{background: "#dd4b39",color: "white",width:'1em',height:'1em'}}/></Link>
-                    </MediaQuery>   
-                </Row>
+        <Container fluid style={{padding:0}}>
+        <MediaQuery query="(max-device-width: 700px)">
+            <Container fluid={true} style={{padding: 0,bottom:0,position:'fixed'}}>
+                <Container fluid={true} style={{filter: 'brightness(80%)',backgroundColor: '#404040',backgroundSize: 'cover',backgroundPosition: 'center'}}>
+                    <Row style={{paddingTop:'3%',paddingBottom:'3%', paddingLeft  :'4%',color:'#fff',justifyContent:'sapce-between'}}>
+                        <span style={{fontSize:'1.6vw',marginRight:'10%'}}>Phone: +91 22-23476453</span>
+                        <span style={{fontSize:'1.6vw'}}>Email: tara.society1@gmail.com</span> 
+                        <MediaQuery query="(min-device-width: 1224px)">
+                        <Link  style={{marginLeft:'20%',color: 'inherit',opacity:1}} to="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon size={"2x"} icon={faInstagram} style={{background: "#dd4b39",color: "white",width:'1em',height:'1em'}}/></Link>
+                        </MediaQuery>   
+                    </Row>
+                </Container>
             </Container>
+        </MediaQuery>
+        <MediaQuery query="(min-device-width: 700px)">
+            <Container fluid={true} style={{padding: 0}}>
+                <Container fluid={true} style={{filter: 'brightness(80%)',backgroundColor: '#404040',backgroundSize: 'cover',backgroundPosition: 'center'}}>
+                    <Row style={{paddingTop:'3%',paddingBottom:'3%', paddingLeft  :'4%',color:'#fff',justifyContent:'sapce-between'}}>
+                        <span style={{fontSize:'1.6vw',marginRight:'10%'}}>Phone: +91 22-23476453</span>
+                        <span style={{fontSize:'1.6vw'}}>Email: tara.society1@gmail.com</span> 
+                        <MediaQuery query="(min-device-width: 1224px)">
+                        <Link  style={{marginLeft:'20%',color: 'inherit',opacity:1}} to="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon size={"2x"} icon={faInstagram} style={{background: "#dd4b39",color: "white",width:'1em',height:'1em'}}/></Link>
+                        </MediaQuery>   
+                    </Row>
+                </Container>
+            </Container>
+        </MediaQuery>
         </Container>
     )
 
