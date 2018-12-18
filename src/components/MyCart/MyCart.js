@@ -111,6 +111,9 @@ class MyCart extends Component {
 						<FormGroup style={{marginBottom:'3vw'}}>
 							<Input style={{width:'70%',height:'5%',fontSize:'1.6vw'}} type="text" name="pincode" placeholder="Pincode*" onChange={this.handlePincodeChange}/>
 						</FormGroup>
+						<FormGroup style={{marginBottom:'3vw'}}>
+							<Input style={{display:'none'}} name="Products Requested" type="text" value={this.props.products}/>
+						</FormGroup>
 						<FormGroup style={{marginBottom:'3vw',width:'70%'}}>
 							<MediaQuery query="(min-device-width: 1224px)">
 								<span style={{fontWeight:600, fontSize:'1.6vw'}}>We will get in touch with you within 24 hours. In case of any queries, please contact +91 22-23476453</span>
