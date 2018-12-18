@@ -40,7 +40,7 @@ class ProductsPage extends Component {
 			
 			<Container fluid style={{padding:0}}>
 				<NavbarHeader position="fixed"/>
-				<SideNav onSelect={(selected) => {
+				<SideNav style={{}} onSelect={(selected) => {
 					
 					this.setState({
 
@@ -58,7 +58,7 @@ class ProductsPage extends Component {
 
 	    		}}
 	    		expanded={this.state.expand}
-	    		style={{top:'70px',zIndex:97,position:'fixed'}}
+	    		style={{top:'70px',zIndex:97,position:'fixed',backgroundColor:'blue'}}
 				>
 				    <SideNav.Toggle expanded={true}/>
 				    <SideNav.Nav defaultSelected="all">
@@ -80,7 +80,7 @@ class ProductsPage extends Component {
 				        </NavItem>
 				        <NavItem eventKey="Batwas">
 				            <NavIcon>
-				            	<span style={{}}>Batwas</span>
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
 				            </NavIcon>
 				            <NavText>
 				                Batwas

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {
 	Carousel,
 	CarouselItem,
@@ -11,23 +12,35 @@ import {
 
 const items = [
 	{
-		src:'',
-		altText: 'Slide 1',
-		caption: 'Slide 1',
-		text: 'it was a very good and helpful experience.'
+		src:'img/Necklaces/1.jpg',
+		altText: 'Necklaces',
+		caption: 'Necklaces',
+		text: <div><span>Find the best hand made Necklaces on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
 	},
 	{
-		src:'/img/guitar.jpg',
-		altText: 'Slide 2',
-		caption: 'Slide 2',
-		text: 'it was a very good and helpful experience.'
+		src:'img/Batwas/1.jpg',
+		altText: 'Batwas',
+		caption: 'Batwas',
+		text: <div><span>Find the best hand made Batwas on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
 	},
 	{
-		src:'',
-		altText: 'Slide 3',
-		caption: 'Slide 3',
-		text: 'it was a very good and helpful experience.'
-	}
+		src:'img/Tablewear/1.jpg',
+		altText: 'Tablewear',
+		caption: 'Tablewear',
+		text: <div><span>Find the best hand made Tablewear on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
+	},
+	{
+		src:'img/Clutch/1.jpg',
+		altText: 'Clutches',
+		caption: 'Clutches',
+		text: <div><span>Find the best hand made Clutches on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
+	},
+	{
+		src:'img/Shawls/1.jpg',
+		altText: 'Shawls',
+		caption: 'Shawls',
+		text: <div><span>Find the best hand made Shawls on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
+	},
 ];
 
 class CarouselHome extends Component {
@@ -80,10 +93,9 @@ class CarouselHome extends Component {
 				<Container fluid style={{backgroundColor:'black'}}>
 				<Row style={{justifyContent:'center',width:'100%',padding:0,margin:0}}>
 					<Card color="primary" style={{width:'40%',padding:'2vw',margin:'3vw',justifyContent:'center'}}>
-						<CardImg top alt={item.altText} src={item.src} style={{borderRadius:'50%',width:"15vw",height:'15vw',alignSelf:'center' }}/>
+						<CardImg top alt={item.altText} src={item.src} style={{width:"30vw",height:'30vw',alignSelf:'center' }}/>
 						<CardBody style={{textAlign:'center',fontSize:'2vw'}}>
-							<CardTitle>{item.caption}</CardTitle>
-							<CardText>{item.text}</CardText>
+							<CardText style={{fontWeight:600}}>{item.text}</CardText>
 							
 						</CardBody>
 					</Card>

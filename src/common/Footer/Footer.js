@@ -20,9 +20,12 @@ function Footer() {
                     <Row style={{paddingTop:'3%',paddingBottom:'3%', paddingLeft  :'4%',color:'#fff',justifyContent:'sapce-between'}}>
                         <span style={{fontSize:'1.6vw',marginRight:'10%'}}>Phone: +91 22-23476453</span>
                         <span style={{fontSize:'1.6vw'}}>Email: tara.society1@gmail.com</span> 
-                        <MediaQuery query="(min-device-width: 1224px)">
+                        {/*<MediaQuery query="(min-device-width: 1224px)">
                         <Link  style={{marginLeft:'20%',color: 'inherit',opacity:1}} to="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon size={"2x"} icon={faInstagram} style={{background: "#dd4b39",color: "white",width:'1em',height:'1em'}}/></Link>
-                        </MediaQuery>   
+                        </MediaQuery>*/}   
+                        <MediaQuery query="(min-device-width: 1224px)">
+                            <img style={{marginLeft:'20%',height:45}} src="/img/logo.jpg" />
+                        </MediaQuery> 
                     </Row>
                 </Container>
             </Container>
@@ -33,9 +36,12 @@ function Footer() {
                     <Row style={{paddingTop:'3%',paddingBottom:'3%', paddingLeft  :'4%',color:'#fff',justifyContent:'sapce-between'}}>
                         <span style={{fontSize:'1.6vw',marginRight:'10%'}}>Phone: +91 22-23476453</span>
                         <span style={{fontSize:'1.6vw'}}>Email: tara.society1@gmail.com</span> 
-                        <MediaQuery query="(min-device-width: 1224px)">
+                        {/*<MediaQuery query="(min-device-width: 1224px)">
                         <Link  style={{marginLeft:'20%',color: 'inherit',opacity:1}} to="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon size={"2x"} icon={faInstagram} style={{background: "#dd4b39",color: "white",width:'1em',height:'1em'}}/></Link>
-                        </MediaQuery>   
+                        </MediaQuery>*/}   
+                        <MediaQuery query="(min-device-width: 1224px)">
+                            <img style={{marginLeft:'20%',height:45}} src="/img/logo.jpg" />
+                        </MediaQuery> 
                     </Row>
                 </Container>
             </Container>
