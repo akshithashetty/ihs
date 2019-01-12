@@ -98,7 +98,7 @@ class MyCart extends Component {
 					</Row>
 				<Container fluid style={{backgroundImage:'url("/img/form_back.png")',backgroundSize:'cover',height:'57vw',paddingTop:'3%',paddingBottom:'8%',paddingLeft:'45%',paddingRight:'0%'}}>
 					<span style={{fontWeight:600,fontSize:'3vw',marginLeft:'8%'}}>Request Confirmation Form</span>
-					<Form style={{marginTop:'4%',marginLeft:'8%'}} action="https://formspree.io/merchant.kaiz@gmail.com" method="POST">
+					<Form style={{marginTop:'4%',marginLeft:'8%'}} action="https://formspree.io/tara.society1@gmail.com" method="POST">
 						<FormGroup style={{marginBottom:'3vw'}}>
 							<Input style={{width:'70%',height:'5%',fontSize:'1.6vw'}} type="text" name="name" placeholder="Full Name*" onChange={this.handleNameChange}/>
 						</FormGroup>

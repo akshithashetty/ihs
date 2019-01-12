@@ -16,7 +16,7 @@ function Footer() {
         <Container fluid style={{padding:0}}>
         <MediaQuery query="(max-device-width: 700px)">
             <Container fluid={true} style={{padding: 0,bottom:0,position:'fixed'}}>
-                <Container fluid={true} style={{filter: 'brightness(80%)',backgroundColor: '#404040',backgroundSize: 'cover',backgroundPosition: 'center'}}>
+                <Container fluid={true} style={{filter: 'brightness(80%)',backgroundColor: '#95CBDB',backgroundSize: 'cover',backgroundPosition: 'center'}}>
                     <Row style={{paddingTop:'3%',paddingBottom:'3%', paddingLeft  :'4%',color:'#fff',justifyContent:'sapce-between'}}>
                         <span style={{fontSize:'1.6vw',marginRight:'10%'}}>Phone: +91 22-23476453</span>
                         <span style={{fontSize:'1.6vw'}}>Email: tara.society1@gmail.com</span> 

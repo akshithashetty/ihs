@@ -15,31 +15,31 @@ const items = [
 		src:'img/Necklaces/1.jpg',
 		altText: 'Necklaces',
 		caption: 'Necklaces',
-		text: <div><span>Find the best hand made Necklaces on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Necklaces on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
 	},
 	{
 		src:'img/Batwas/1.jpg',
 		altText: 'Batwas',
 		caption: 'Batwas',
-		text: <div><span>Find the best hand made Batwas on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Batwas on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
 	},
 	{
 		src:'img/Tablewear/1.jpg',
 		altText: 'Tablewear',
 		caption: 'Tablewear',
-		text: <div><span>Find the best hand made Tablewear on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Tablewear on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
 	},
 	{
 		src:'img/Clutch/1.jpg',
 		altText: 'Clutches',
 		caption: 'Clutches',
-		text: <div><span>Find the best hand made Clutches on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Clutches on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
 	},
 	{
 		src:'img/Shawls/1.jpg',
 		altText: 'Shawls',
 		caption: 'Shawls',
-		text: <div><span>Find the best hand made Shawls on our </span><Link to="/products" style={{fontWeight:600,color:'white'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Shawls on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
 	},
 ];
 
@@ -90,9 +90,9 @@ class CarouselHome extends Component {
 					key={item.src}
 					style={{justifyContent:'center'}}
 				>
-				<Container fluid style={{backgroundColor:'black'}}>
+				<Container fluid style={{backgroundColor:'#fadadd'}}>
 				<Row style={{justifyContent:'center',width:'100%',padding:0,margin:0}}>
-					<Card color="primary" style={{width:'40%',padding:'2vw',margin:'3vw',justifyContent:'center'}}>
+					<Card style={{width:'40%',padding:'2vw',margin:'3vw',justifyContent:'center',backgroundColor:'#fadadd',border:'none'}}>
 						<CardImg top alt={item.altText} src={item.src} style={{width:"30vw",height:'30vw',alignSelf:'center' }}/>
 						<CardBody style={{textAlign:'center',fontSize:'2vw'}}>
 							<CardText style={{fontWeight:600}}>{item.text}</CardText>
@@ -110,7 +110,7 @@ class CarouselHome extends Component {
 				activeIndex={activeIndex}
 				next={this.next}
 				previous={this.previous}
-				style={{color:'black'}}
+				style={{color:'#fadadd'}}
 			>
 				<CarouselIndicators style={{color:'black',justifyContent:'center'}} items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
 				{slides}

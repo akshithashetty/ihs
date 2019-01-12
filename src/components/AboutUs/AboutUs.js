@@ -12,10 +12,10 @@ class App extends Component {
 			<Container fluid style={{backgroundImage:'url("/img/about.jpg")', backgroundSize:'cover',height:'60vw',paddingTop:'70px'}}>
 			</Container>
 			<Container fluid>
-				<Row style={{fontSize:'3vw',fontWeight:600,justifyContent:'center',paddingTop:'8%'}}>
+				<Row style={{fontSize:'3vw',fontWeight:600,justifyContent:'center',paddingTop:'8%',backgroundColor:'#fadadd'}}>
 					<span >TARA</span>
 				</Row>
-				<Row style={{fontSize:'1.5vw',padding:'4%'}}>
+				<Row style={{fontSize:'1.5vw',padding:'4%',backgroundColor:'#fadadd'}}>
 					Tara, a Star, symbolizes Hope. A Hope to achieve the heights of
 					success. This is a bead craft project nurtured by The Ismailia
 					Helping Society to promote the economic empowerment of women of
