@@ -4,53 +4,119 @@ import { NavbarHeader } from '../../common/NavbarHeader/NavbarHeader';
 import { Link } from 'react-router-dom';
 import { Footer } from '../../common/Footer/Footer';
 import CarouselHome from './CarouselHome'
+import choice from './choice.png'
+import cart from './cardCart.png'
+import form from './form2.png'
+import openingInvertedCommas from './openinginvertedcommas.png'
+import closingInvertedCommas from './closinginvertedcommas.png'
+import './HomePage.css'
 
 class HomePage extends Component {
   render() {
     return (
     	<Container fluid style={{padding:0, minHeight:'100vh'}}>
     		<NavbarHeader position=""/>
-    		<Container fluid style={{backgroundImage:'url("/img/background_home.png")',height:'60vw',backgroundSize:'cover',paddingTop:'8%',paddingBottom:'8%',paddingLeft:'16%',paddingRight:'16%'}}>
-    			<Container style={{borderStyle:'solid',borderWidth:'1vw',paddingBottom:'3%'}}>
-    				<Row style={{paddingTop:'4%',paddingRight:'4%',paddingLeft:'4%',fontSize:'4vw',fontWeight:'600'}}>
+    		<Container fluid className="backgroundImage">
+    			<Container style={{paddingBottom:'3%',margin:'10px',}}>
+    				<Row className="backgroundImageTitle">
     					<span>Something beyond just gifts, get the joy of giving back</span>
     				</Row>
-    				<Row style={{paddingLeft:'4%',paddingRight:'4%',fontSize:'2vw',fontWeight:'600',fontStyle:'italic'}}>
-    					<span>We are a foundation that helps women become self sufficient by helping them tailor their ideas.</span>
+    				<Row className="backgroundImageSubTitle">
+    					<span>We are a foundation that helps women become self-sufficient by helping them tailor their ideas.</span>
     				</Row>
-    				<Row style={{justifyContent:'space-evenly',paddingTop:'6%',paddingLeft:'4%',paddingRight:'4%',fontStyle:'italic'}}>
-    					<img alt="thread" src="/img/thread1.png" style={{width:'12%',height:'12%'}}/>
-    					<Link to="/about"><Button color="warning" style={{fontSize:'2vw',fontWeight:'600',verticalAlign:'center'}}>Know More</Button></Link>
-    					<Link to="/products"><Button color="warning" style={{fontSize:'2vw',fontWeight:'600'}}>View Products</Button></Link>
+    				<Row style={{justifyContent:'left',paddingTop:'6%',paddingRight:'4%',fontStyle:'italic'}}>
+    					<Link to="/about"><Button className="backgroundImageButtonLeft" >KNOW MORE</Button></Link>
+    					<Link to="/products"><Button className="backgroundImageButtonRight">VIEW PRODUCTS</Button></Link>
     				</Row>
 
     			</Container>
     		</Container>
 			<Container>
 				<Row>
-					<hr style={{border:'1px solid black',width:'30%'}} />
+					<hr style={{border:'1px solid #2F2D5D',width:'35%', marginTop:'4%'}} />
 				</Row>
 			</Container>
-			<Container fluid style={{padding:0}}>
-				<Row style={{justifyContent:'center',fontWeight:'600',fontSize:'3vw',margin:0}}>
-					<span>What We Do</span>
+			<Container>
+				<Row className="sectionHeading">
+					<span>Get Started</span>
 				</Row>
-				<Row style={{justifyContent:'center',paddingTop:'2%',fontSize:'1.5vw',margin:0}}>
-					<p style={{fontWeight:600,paddingRight:'6%',paddingLeft:'6%',fontSize:'2vw'}}>
-						The Ismailia Helping Society was established in 1936, by a group of visionaries and social thinkers of our community. IHS was  registered as an NGO in 1952. 
-						The mission of  IHS- mentoring women by enhancing their economic status through improved occupational skills and business acumen. 
-						The Society had two major programmes:<br/>
-						1) Project Tara: the project was launched in 1995.  TARA - A Star, symbolised Hope. A Hope to achieve the heights of success. This is a beadcraft project nurtured by IHS to promote the economic empowerment of rural women of Saurashtra. The traditional skill and art of rural women is blended harmoniously with contemporary colour and design to provide handcrafted masterpieces. 
-						<br/>2)Flavours: The Catering Programme was launched in 2009. It was started to promote enterprnership of women in the field of catering. Women with culinary skills are upgraded under this programme. 
+				<Row style={{justifyContent:'center',paddingTop:'2%',fontSize:'1.5vw',margin:0,}}>
+                    <Container className="stepsCard">
+                        <Row className="stepsCardImageRow">
+                            <img className="stepsCardImage" alt="logo" src={choice}></img>
+                        </Row>
+                        <Row className="stepsCardTitleRow">
+                            <span className="stepsCardTitle" >
+                            Firstly,
+                            </span>
+                        </Row>
+                        <Row className="stepsCardDescription" >
+                            Choose what suits your needs from our wide range of products
+                        </Row>
+                    </Container>
 
-					</p>
+                    <Container className="stepsCard" >
+                        <Row className="stepsCardImageRow" >
+                        <img  className="stepsCardImage" alt="logo" src={cart}></img>
+                        </Row>
+                        <Row className="stepsCardTitleRow">
+                        <span className="stepsCardTitle">
+                        Next,
+                        </span>
+                        </Row>
+                        <Row className="stepsCardDescription" >
+                        Add what you like to the shopping cart and shortlist later on.
+                        </Row>
+                    </Container>
+
+
+                    <Container className="stepsCard" >
+                        <Row className="stepsCardImageRow"  >
+                        <img className="stepsCardImage" alt="logo" src={form}></img>
+                        </Row>
+                        <Row className="stepsCardTitleRow" >
+                        <span className="stepsCardTitle">
+                        Finally,
+                        </span>
+                        </Row>
+                        <Row className="stepsCardDescription">
+                        Fill the order confirmation form and we will get in touch with you.
+                        </Row>
+                    </Container>
 				</Row>
 			</Container>
 			<Container>
 				<Row>
-					<hr style={{border:'1px solid black',width:'30%'}} />
+					<hr style={{border:'1px solid #2F2D5D',width:'35%', marginBottom:'4%',marginTop:'4%'}} />
 				</Row>
 			</Container>
+
+            <Container>
+                <Row className="sectionHeading">
+                    <span>Note from the Founder</span>
+                </Row>
+                <Row>
+                <img  className="noteComma" alt="logo" src={openingInvertedCommas}></img>
+                </Row>
+				<Row>
+                <span className="noteMessage">
+                The aim was to not only employ women but also make them feel like the contributers to the society. It was a process that began right from day one and it gives everyone at tara a sense of fullfillement to see how it has turned out. We chose this digital platform so that we could expose more people to this sense of satisfation through buying our products.
+                </span>
+                </Row>
+                <Row>
+                <span className="noteMessageAuthor">
+                -Barkha Singh
+                </span>
+                <span>
+                <img  className="noteComma" alt="logo" src={closingInvertedCommas}></img>
+                </span>
+                </Row>
+                <Row>
+					<hr style={{border:'1px solid #2F2D5D',width:'35%', marginBottom:'4%',marginTop:'4%'}} />
+				</Row>
+			</Container>
+
+
 			<Container fluid style={{padding:'0%'}}>
 				<CarouselHome />
 			</Container>

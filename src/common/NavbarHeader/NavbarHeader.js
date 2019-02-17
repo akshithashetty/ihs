@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import logo from './ihslogo.png';
+import cartIcon from './carticon.png'
 import {
 	Container,
 	Collapse,
@@ -45,21 +47,21 @@ class NavbarHeader extends Component {
   render() {
 	return (
 	  <Container fluid style={{padding:0,position: this.props.position ,zIndex:98}}>
-		<Navbar color="light" light expand="md" style={{justifyContent:'center'}}>
-			<NavbarBrand className="mr-auto" style={{paddingLeft:'8%'}}>
-			  	<img style={{backgroundSize:'cover',height:'45px'}}alt="logo" src="/img/logo.jpg"></img>
+		<Navbar light expand="md" style={{justifyContent:'center', width:'100%',backgroundColor:'#ffffff'}}>
+			<NavbarBrand className="mr-auto" style={{paddingLeft:'2%'}}>
+			  	<img style={{backgroundSize:'cover',height:'6vh'}}alt="logo" src={logo}></img>
 			</NavbarBrand>
-		  	<NavbarToggler onClick={this.toggle} style={{marginRight:'10%',marginBottom:'3%'}}/>
-		 	<Collapse isOpen={this.state.isOpen} navbar style={{paddingLeft:'12%',justifyContent:'center'}}>
-				<Nav style={{width:'100%',fontWeight:600,color:'black',fontSize:'20px',zIndex:99}} navbar>
+		  	<NavbarToggler onClick={this.toggle} style={{marginRight:'18%',marginBottom:'3%'}}/>
+		 	<Collapse isOpen={this.state.isOpen} navbar style={{paddingLeft:'4%',justifyContent:'center'}}>
+				<Nav style={{width:'100%',fontWeight:600,fontSize:'18',zIndex:99}} navbar>
 					<NavItem style={{marginRight:'6%',color:'black'}}>
-						<Link to='/' style={{color:'black',textDecoration:'none'}}>HOME</Link>
+						<Link to='/' style={{color:'#5C5C5C',textDecoration:'none',fontFamily:'Roboto'}}>HOME</Link>
 					</NavItem>
 					<NavItem style={{marginRight:'6%'}}>
-						<Link to='/about' style={{color:'black',textDecoration:'none'}}>ABOUT US</Link>
+						<Link to='/about' style={{color:'#5C5C5C' ,fontSize:'18',fontFamily:'Roboto', textDecoration:'none'}}>ABOUT US</Link>
 					</NavItem>
 					<NavItem style={{}}>
-						<Link to='/products' style={{color:'black',textDecoration:'none'}}>PRODUCTS</Link>
+						<Link to='/products' style={{color:'#5C5C5C',textDecoration:'none',fontFamily:'Roboto'}}>PRODUCTS</Link>
 					</NavItem>
 				</Nav>
 			</Collapse>
@@ -67,7 +69,7 @@ class NavbarHeader extends Component {
 	  		<Nav style={{paddingRight:'16%'}} navbar>
 		  		<NavItem>
 		  			<Link to="/cart">
-						<FontAwesomeIcon icon={faCartPlus} size={'2x'} style={{color:'F5D04C'}} />
+						<img style={{backgroundSize:'cover',height:'6vh'}} alt="Cart Icon" src={cartIcon}></img>
 					</Link>
 		  		</NavItem>
 		  		<NavItem id="notification" style={{
@@ -75,14 +77,14 @@ class NavbarHeader extends Component {
 					top:'9%',
 					right:'15.5%',
 					position:'absolute',
-					background: '#ff6600',
+					background: '#2F2D5D',
 					height: '20px',
 					width: '18px',
 					textAlign: 'center',
 					fontSize: '13px',
 					borderRadius: '50%',
 					color: 'white',
-					border: '1px solid #ff6600',
+					border: '1px solid #2F2D5D',
 					fontFamily: 'sans-serif',
 					fontWeight: 'bold'}}>
 					<span>{ this.props.count }</span>

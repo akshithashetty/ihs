@@ -21,25 +21,25 @@ const items = [
 		src:'img/Batwas/1.jpg',
 		altText: 'Batwas',
 		caption: 'Batwas',
-		text: <div><span>Find the best hand made Batwas on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Batwas on our </span><Link to="/products" style={{fontWeight:600,color:'#2F2D5D'}}>products page</Link></div>
 	},
 	{
 		src:'img/Tablewear/1.jpg',
 		altText: 'Tablewear',
 		caption: 'Tablewear',
-		text: <div><span>Find the best hand made Tablewear on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Tablewear on our </span><Link to="/products" style={{fontWeight:600,color:'#2F2D5D'}}>products page</Link></div>
 	},
 	{
 		src:'img/Clutch/1.jpg',
 		altText: 'Clutches',
 		caption: 'Clutches',
-		text: <div><span>Find the best hand made Clutches on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Clutches on our </span><Link to="/products" style={{color:'#2F2D5D'}}>products page</Link></div>
 	},
 	{
 		src:'img/Shawls/1.jpg',
 		altText: 'Shawls',
 		caption: 'Shawls',
-		text: <div><span>Find the best hand made Shawls on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Shawls on our </span><Link to="/products" style={{color:'#2F2D5D',}}>products page</Link></div>
 	},
 ];
 
@@ -90,13 +90,13 @@ class CarouselHome extends Component {
 					key={item.src}
 					style={{justifyContent:'center'}}
 				>
-				<Container fluid style={{backgroundColor:'#fadadd'}}>
+				<Container fluid style={{backgroundColor:'#f6d1cb'}}>
 				<Row style={{justifyContent:'center',width:'100%',padding:0,margin:0}}>
-					<Card style={{width:'40%',padding:'2vw',margin:'3vw',justifyContent:'center',backgroundColor:'#fadadd',border:'none'}}>
+					<Card style={{width:'40%',padding:'2vw',margin:'3vw',justifyContent:'center',backgroundColor:'#f6d1cb',border:'none'}}>
 						<CardImg top alt={item.altText} src={item.src} style={{width:"30vw",height:'30vw',alignSelf:'center' }}/>
-						<CardBody style={{textAlign:'center',fontSize:'2vw'}}>
+						<CardBody style={{fontWeight:'400',fontSize:'1.6vw', paddingLeft:'30px',paddingRight: '30px', color:'#5C5C5C', fontstyle:'Montserrat',fontStyle:'italic',}}>
 							<CardText style={{fontWeight:600}}>{item.text}</CardText>
-							
+
 						</CardBody>
 					</Card>
 				</Row>

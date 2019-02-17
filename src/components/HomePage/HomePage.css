@@ -1,0 +1,209 @@
+.backgroundImage{
+    background-image:url("/img/background2.png");
+    height:45vw;
+    background-size:cover;
+    padding-top:8%;
+    padding-bottom:6%;
+    padding-right:48%;
+    text-align: left;
+    padding-left: 0;
+}
+.backgroundImageTitle{
+    padding-top:4%;
+    padding-right:45%;
+    color:#5C5C5C;
+    font-size:3.2vw;
+    font-weight:600;
+    font-style:'Montserrat';
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.backgroundImageSubTitle{
+   padding-right:50%;
+   color:#5C5C5C;
+   font-size:1.6vw;
+   font-weight:400;
+   font-style:'Montserrat';
+   font-style:italic;
+   padding-left: 20px;
+}
+.backgroundImageButtonLeft {
+    font-size:1.2vw!important;
+    font-weight:600!important;
+    vertical-align:center!important;
+    background-color:#ffffff !important;
+    color:#F5BA13 !important;
+    border-Color:#F5BA13 !important;
+    font-style:'Roboto'!important;
+    margin-left: 20px;
+    margin-right:15px;
+}
+.backgroundImageButtonRight {
+    font-size:1.2vw!important;
+    font-weight:600!important;
+    vertical-align:center!important;
+    background-color:#F5BA13 !important;
+    color:#ffffff !important;
+    border-Color:#F5BA13 !important;
+    font-style:'Roboto'!important;
+}
+.stepsCard {
+    background-color:#dfeef3;
+    width: 25% !important;
+    height: 1%;
+    padding:20px !important;
+    border-radius: 10px;
+}
+.stepsCardImage{
+    background-size:cover;
+    height:6vw;
+}
+.stepsCardDescription{
+    justify-content:center;
+    padding-top:20px;
+    font-weight:200;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-style: 'Roboto';
+}
+.sectionHeading{
+    justify-content:center;
+    font-weight:600;
+    font-size:2vw;
+    margin:0;
+    color:#5C5C5C;
+    font-style:'Montserrat';
+}
+.stepsCardTitle{
+    justify-content: center;
+    font-weight: 500;
+    font-size: 21px;
+    color:#5C5C5C;
+    font-style: 'Montserrat';
+}
+.stepsCardTitleRow{
+    justify-content:center;
+    padding-top:30px;
+}
+
+.stepsCardImageRow{
+     justify-content:center;
+     padding-top:30px;
+}
+.noteComma{
+    height:4vw;
+}
+.noteMessage{
+    justify-content:center;
+    font-weight:400;
+    font-size:1.6vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:#5C5C5C;
+    font-style:'Montserrat';
+    padding-bottom: 15px;
+}
+.noteMessageAuthor{
+    padding-left: 65vw;
+    color:#2F2D5D;
+    font-size:1.4vw;
+    font-weight:400;
+    font-style:'Montserrat';
+    font-style:italic;
+    padding-right: 2vw;
+
+}
+@media only screen and (max-width: 600px) {
+    .stepsCard {
+        width: 80% !important;
+        height: 0.75%;
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-top: 0px;
+    }
+    .stepsCardImage{
+        height:12vw;
+    }
+    .stepsCardDescription{
+        justify-content:center;
+        padding-top:10px;
+        font-weight:200;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .sectionHeading{
+        font-size: 5vw;
+        font-weight:500;
+    }
+    .stepsCardTitle{
+        justify-content: center;
+        font-weight: 500;
+        font-size: 15px;
+        color:#5C5C5C;
+        font-style: 'Montserrat';
+    }
+    .stepsCardTitleRow{
+        padding-top: 10px;
+    }
+    .stepsCardImageRow{
+        padding-top:0px;
+    }
+    .backgroundImage{
+        background-image:url("/img/backgroundimagesmall.png");
+        height:90vh;
+        padding-top:8%;
+        padding-bottom:6%;
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+        vertical-align: middle;
+    }
+    .backgroundImageTitle{
+        padding-top:7%;
+        font-size:6vw;
+        font-weight:500;
+        padding-left: 0;
+        padding-bottom:10px;
+        padding-right: 0;
+    }
+    .backgroundImageSubTitle{
+       font-size:3vw;
+       font-weight:400;
+       padding-left: 0;
+       padding-right: 0;
+    }
+    .backgroundImageButtonLeft {
+        font-size:2vw!important;
+        font-weight:600!important;
+        margin-right:15px;
+    }
+    .backgroundImageButtonRight {
+        font-size:2vw!important;
+        font-weight:600!important;
+
+    }
+    .noteComma{
+        height:4vw;
+        padding-left: 5vw;
+    }
+    .noteMessage{
+        justify-content:center;
+        font-weight:400;
+        font-size:3vw;
+        padding-left: 40px;
+        padding-right: 30px;
+        color:#5C5C5C;
+        font-style:'Montserrat';
+        padding-bottom: 15px;
+    }
+    .noteMessageAuthor{
+        padding-left: 65vw;
+        color:#2F2D5D;
+        font-size:3vw;
+        font-weight:400;
+        font-style:'Montserrat';
+        font-style:italic;
+        padding-right: 1vw;
+    }
+}

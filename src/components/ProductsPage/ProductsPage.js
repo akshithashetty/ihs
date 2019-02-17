@@ -37,18 +37,18 @@ class ProductsPage extends Component {
 	render() {
 		return (
 
-			
+
 			<Container fluid style={{padding:0}}>
 				<NavbarHeader position="fixed"/>
 				<SideNav style={{}} onSelect={(selected) => {
-					
+
 					this.setState({
 
 						selected: selected,
 						expand: false
 					})
 					console.log(this.state.selected);
-	    		}} 
+	    		}}
 
 	    		onToggle = {() =>{
 					this.setState({
@@ -58,13 +58,13 @@ class ProductsPage extends Component {
 
 	    		}}
 	    		expanded={this.state.expand}
-	    		style={{top:'70px',zIndex:97,position:'fixed',backgroundColor:'blue'}}
+	    		style={{top:'70px',zIndex:97,position:'fixed',backgroundColor:'#F6D1CB'}}
 				>
 				    <SideNav.Toggle expanded={true}/>
 				    <SideNav.Nav defaultSelected="all">
 				        <NavItem eventKey="all">
 				            <NavIcon>
-				                <FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				                <FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
 				            <NavText>
 				                All Products
@@ -72,7 +72,7 @@ class ProductsPage extends Component {
 				        </NavItem>
 				        <NavItem eventKey="Necklaces">
 				            <NavIcon>
-				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
 				            <NavText>
 				                Necklaces
@@ -80,7 +80,7 @@ class ProductsPage extends Component {
 				        </NavItem>
 				        <NavItem eventKey="Batwas">
 				            <NavIcon>
-				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
 				            <NavText>
 				                Batwas
@@ -88,7 +88,7 @@ class ProductsPage extends Component {
 				        </NavItem>
 				        <NavItem eventKey="Clutch">
 				            <NavIcon>
-				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
 				            <NavText>
 				                Clutch
@@ -96,7 +96,7 @@ class ProductsPage extends Component {
 				        </NavItem>
 				        <NavItem eventKey="Tablewear">
 				            <NavIcon>
-				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
 				            <NavText>
 				                Tablewear
@@ -104,7 +104,7 @@ class ProductsPage extends Component {
 				        </NavItem>
 				        <NavItem eventKey="Shawls">
 				            <NavIcon>
-				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
 				            <NavText>
 				                Shawls
@@ -112,7 +112,7 @@ class ProductsPage extends Component {
 				        </NavItem>
 				        <NavItem eventKey="Other">
 				            <NavIcon>
-				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'F5D04C'}} />
+				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
 				            <NavText>
 				                Other
@@ -126,7 +126,7 @@ class ProductsPage extends Component {
 						{
 	                        FEATURE_CARD_ELEMENTS.map((feature_card) => {
 
-	                            return (feature_card.category === this.state.selected || this.state.selected === "all") ? 
+	                            return (feature_card.category === this.state.selected || this.state.selected === "all") ?
 	                            (
 	                                <FeatureCard
 	                                    img={feature_card.img}
