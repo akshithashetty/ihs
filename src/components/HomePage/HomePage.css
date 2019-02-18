@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .backgroundImage{
     background-image:url("/img/background2.png");
     height:45vw;
@@ -129,8 +133,8 @@
         justify-content:center;
         padding-top:10px;
         font-weight:200;
-        font-size: 15px;
         text-align: justify;
+        font-size:4vw;
     }
     .sectionHeading{
         font-size: 5vw;
@@ -177,6 +181,7 @@
         font-size:2vw!important;
         font-weight:600!important;
         margin-right:15px;
+        margin-left: 0;
     }
     .backgroundImageButtonRight {
         font-size:2vw!important;
@@ -190,17 +195,18 @@
     .noteMessage{
         justify-content:center;
         font-weight:400;
-        font-size:3vw;
+        font-size:4vw;
         padding-left: 40px;
         padding-right: 30px;
         color:#5C5C5C;
         font-style:'Montserrat';
         padding-bottom: 15px;
+        text-align: justify;
     }
     .noteMessageAuthor{
-        padding-left: 65vw;
+        padding-left: 60vw;
         color:#2F2D5D;
-        font-size:3vw;
+        font-size:4vw;
         font-weight:400;
         font-style:'Montserrat';
         font-style:italic;

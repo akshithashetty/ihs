@@ -15,7 +15,7 @@ const items = [
 		src:'img/Necklaces/1.jpg',
 		altText: 'Necklaces',
 		caption: 'Necklaces',
-		text: <div><span>Find the best hand made Necklaces on our </span><Link to="/products" style={{fontWeight:600,color:'blue'}}>products page</Link></div>
+		text: <div><span>Find the best hand made Necklaces on our </span><Link to="/products" style={{fontWeight:600,color:'#2F2D5D'}}>products page</Link></div>
 	},
 	{
 		src:'img/Batwas/1.jpg',
@@ -94,7 +94,7 @@ class CarouselHome extends Component {
 				<Row style={{justifyContent:'center',width:'100%',padding:0,margin:0}}>
 					<Card style={{width:'40%',padding:'2vw',margin:'3vw',justifyContent:'center',backgroundColor:'#f6d1cb',border:'none'}}>
 						<CardImg top alt={item.altText} src={item.src} style={{width:"30vw",height:'30vw',alignSelf:'center' }}/>
-						<CardBody style={{fontWeight:'400',fontSize:'1.6vw', paddingLeft:'30px',paddingRight: '30px', color:'#5C5C5C', fontstyle:'Montserrat',fontStyle:'italic',}}>
+						<CardBody style={{fontWeight:'400',fontSize:'1.6vw', color:'#5C5C5C', fontstyle:'Montserrat',fontStyle:'italic',textAlign:'center',}}>
 							<CardText style={{fontWeight:600}}>{item.text}</CardText>
 
 						</CardBody>

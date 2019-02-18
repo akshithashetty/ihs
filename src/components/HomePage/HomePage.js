@@ -32,7 +32,7 @@ class HomePage extends Component {
     			</Container>
     		</Container>
 			<Container>
-				<Row>
+				<Row style={{justifyContent:'center'}}>
 					<hr style={{border:'1px solid #2F2D5D',width:'35%', marginTop:'4%'}} />
 				</Row>
 			</Container>
@@ -86,7 +86,7 @@ class HomePage extends Component {
 				</Row>
 			</Container>
 			<Container>
-				<Row>
+				<Row style={{justifyContent:'center'}}>
 					<hr style={{border:'1px solid #2F2D5D',width:'35%', marginBottom:'4%',marginTop:'4%'}} />
 				</Row>
 			</Container>
@@ -111,7 +111,7 @@ class HomePage extends Component {
                 <img  className="noteComma" alt="logo" src={closingInvertedCommas}></img>
                 </span>
                 </Row>
-                <Row>
+                <Row style={{justifyContent:'center'}}>
 					<hr style={{border:'1px solid #2F2D5D',width:'35%', marginBottom:'4%',marginTop:'4%'}} />
 				</Row>
 			</Container>

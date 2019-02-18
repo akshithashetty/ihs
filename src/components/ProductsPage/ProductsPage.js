@@ -66,7 +66,7 @@ class ProductsPage extends Component {
 				            <NavIcon>
 				                <FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
-				            <NavText>
+				            <NavText style={{color:'white'}}>
 				                All Products
 				            </NavText>
 				        </NavItem>
@@ -74,7 +74,7 @@ class ProductsPage extends Component {
 				            <NavIcon>
 				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
-				            <NavText>
+				            <NavText style={{color:'white'}}>
 				                Necklaces
 				            </NavText>
 				        </NavItem>
@@ -82,15 +82,15 @@ class ProductsPage extends Component {
 				            <NavIcon>
 				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
-				            <NavText>
+				            <NavText style={{color:'white'}}>
 				                Batwas
 				            </NavText>
-				        </NavItem>
+				        </NavItem >
 				        <NavItem eventKey="Clutch">
 				            <NavIcon>
 				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
-				            <NavText>
+				            <NavText style={{color:'white'}}>
 				                Clutch
 				            </NavText>
 				        </NavItem>
@@ -98,7 +98,7 @@ class ProductsPage extends Component {
 				            <NavIcon>
 				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
-				            <NavText>
+				            <NavText style={{color:'white'}}>
 				                Tablewear
 				            </NavText>
 				        </NavItem>
@@ -106,7 +106,7 @@ class ProductsPage extends Component {
 				            <NavIcon>
 				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
-				            <NavText>
+				            <NavText style={{color:'white'}}>
 				                Shawls
 				            </NavText>
 				        </NavItem>
@@ -114,7 +114,7 @@ class ProductsPage extends Component {
 				            <NavIcon>
 				            	<FontAwesomeIcon icon={faAngleDoubleRight} size={'2x'} style={{color:'#2F2D5D'}} />
 				            </NavIcon>
-				            <NavText>
+				            <NavText style={{color:'white'}}>
 				                Other
 				            </NavText>
 				        </NavItem>
